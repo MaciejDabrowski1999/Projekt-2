@@ -40,6 +40,9 @@ html {
 .right {
     width: 100px
 }
+.unvisible {
+    display: none;
+}
 
 /* Mid */
 
