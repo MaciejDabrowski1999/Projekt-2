@@ -1,4 +1,142 @@
-@media screen and (max-width:) {
-    .
-    
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+/* Globalne */
+.container {
+    width: 960px;
+}
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+}
+.size {
+    font-size: 36px;
+}
+.margin {
+    margin: 0% 7%;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.margin_top {
+    margin: 7% 0%;
+}
+/* Top */
+
+.menu {
+    background-color: #4E4E4E;
+    font-size: 16px;
+    height: 50px;
+    justify-content: space-between;
+}
+.right {
+    width: 100px
+}
+
+/* Mid */
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+.contact {
+    cursor: not-allowed;
+}
+.fog {
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.shadow {
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 0;
+}
+.about_us {
+    font-size: 16px;
+    flex-direction: column;
+    transition: all 1s;
+    height: 100vh;
+    width: 50%;
+}
+.offer.button {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    transition: all 1s;
+}
+.offer.button:hover {
+    color: black;
+    background-color: white;
+}
+.circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 200px;
+    border-radius: 50%;
+    aspect-ratio: 1.0;
+    background-position:center;
+    background-size:cover;
+}
+.spec {
+    color: black;
+}
+.spec:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: end;
+}
+.jack {
+    background-image: url(jack.jpg);
+}
+.bob {
+    background-image: url(bob.jpg);
+}
+
+/*bottom*/
+
+.down {
+    background-color: #405D78;
+}
+.blue {
+    height: 100px;
+    justify-content: flex-start;
+}
+.offer {
+    width: 960px;
+    flex-wrap: wrap;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    margin: 3%;
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 10px 0px black;
+}
+.box:hover {
+    transform: scale(1.05);
+}
+.smcircle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 200px;
+    margin-right: 200px;
+    aspect-ratio: 1;
+    background-color: #E07A64;
 }
