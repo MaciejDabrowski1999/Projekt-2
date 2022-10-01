@@ -7,15 +7,12 @@ html {
     color: white;
 }
 /* Globalne */
-.container {
-    width: 960px;
-}
 .bold {
-    font-size: 20px;
+    font-size: 140%;
     font-weight: bold;
 }
 .size {
-    font-size: 36px;
+    font-size: 150%;
 }
 .margin {
     margin: 0% 7%;
@@ -24,7 +21,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+}
+.wrap  {
+    flex-wrap: wrap;
 }
 .margin_top {
     margin: 7% 0%;
@@ -33,12 +32,12 @@ html {
 
 .menu {
     background-color: #4E4E4E;
-    font-size: 16px;
-    height: 50px;
+    width: 100vw;
+    height: 5%;
     justify-content: space-between;
 }
 .right {
-    width: 100px
+    width: 20vw
 }
 .unvisible {
     display: none;
@@ -54,25 +53,26 @@ html {
     cursor: not-allowed;
 }
 .fog {
-    width: 100vh;
-    height: 100vh;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(fog.jpg);
+    background-size: cover;
     position: absolute;
     z-index: -1;
 }
 .shadow {
     background-color: rgb(0, 0, 0, 0.5);
-    z-index: 0;
 }
 .about_us {
     font-size: 16px;
     flex-direction: column;
     transition: all 1s;
-    height: 100vh;
+    height: 80vh;
     width: 50%;
 }
 .offer.button {
-    width: 150px;
-    height: 30px;
+    width: 50%;
+    height: 20%;
     text-align: center;
     background: none;
     border: 2px solid white;
@@ -88,7 +88,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 200px;
+    height: auto;
     border-radius: 50%;
     aspect-ratio: 1.0;
     background-position:center;
@@ -96,10 +96,8 @@ html {
 }
 .spec {
     color: black;
-}
-.spec:nth-of-type(even) {
-    flex-direction: row-reverse;
-    text-align: end;
+    justify-content: center;
+    align-items: center;
 }
 .jack {
     background-image: url(jack.jpg);
@@ -114,32 +112,52 @@ html {
     background-color: #405D78;
 }
 .blue {
-    height: 100px;
+    height: 20%;
     justify-content: flex-start;
 }
 .offer {
-    width: 960px;
-    flex-wrap: wrap;
+    width: 100vw;
 }
 .box {
-    height: 200px;
-    width: 200px;
+    width: 75%;
+    height: auto;
+    aspect-ratio: 1;
     margin: 3%;
     background-color: white;
     color: black;
     transition: all 0.5s;
     box-shadow: 5px 5px 10px 0px black;
 }
+.smcircle {
+    object-position: 125% 125%;
+    width: 5%;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: #E07A64;
+}
 .box:hover {
     transform: scale(1.05);
 }
-.smcircle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-bottom: 200px;
-    margin-right: 200px;
-    aspect-ratio: 1;
-    background-color: #E07A64;
+.absolute {
+    object-position: center;
+}
+
+@media screen and (width:1024px) {
+    /*global */
+    .container {
+        width: 960px;
+    }
+    /* top */
+    .menu {
+        height: 50px;
+    }
+    .right {
+        width: 100px
+    }
+    .spec:nth-of-type(even) {
+        flex-direction: row-reverse;
+        text-align: end;
+    }
+    
 }
