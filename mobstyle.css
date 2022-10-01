@@ -6,7 +6,9 @@ html {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+
 /* Globalne */
+
 .bold {
     font-size: 140%;
     font-weight: bold;
@@ -28,19 +30,23 @@ html {
 .margin_top {
     margin: 7% 0%;
 }
+.left {
+    justify-content: flex-start;
+}
+
 /* Top */
 
 .menu {
     background-color: #4E4E4E;
     width: 100vw;
     height: 5%;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .right {
     width: 20vw
 }
 .unvisible {
-    display: none;
+    visibility: hidden;
 }
 
 /* Mid */
@@ -98,6 +104,7 @@ html {
     color: black;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .jack {
     background-image: url(jack.jpg);
@@ -117,6 +124,7 @@ html {
 }
 .offer {
     width: 100vw;
+    flex-wrap: wrap;
 }
 .box {
     width: 75%;
@@ -143,21 +151,62 @@ html {
     object-position: center;
 }
 
-@media screen and (width:1024px) {
+/* Tablet */
+
+@media screen and (min-width:600px) and (max-width: 1024px) {
+    /* Top */
+    .menu {
+        flex-wrap: nowrap;
+    }
+    .unvisible {
+        visibility:visible;
+    }
+}
+
+/* Computer */
+
+@media screen and (min-width:1024px) {
     /*global */
     .container {
-        width: 960px;
+        width: 100vw;
     }
+
     /* top */
+
     .menu {
         height: 50px;
+        width: 100vw;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
     }
     .right {
         width: 100px
     }
+    .unvisible {
+        visibility:visible;
+    }
+
+    /* mid */
+    .fog {
+        width: 100vw;
+        height: 80vh;
+    }
+    .spec {
+        flex-wrap: nowrap;
+    }
     .spec:nth-of-type(even) {
         flex-direction: row-reverse;
         text-align: end;
+    }
+
+    /*bottom */
+
+    .offer {
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 25%;
     }
     
 }
