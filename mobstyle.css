@@ -33,6 +33,14 @@ html {
 .left {
     justify-content: flex-start;
 }
+.black {
+    color: black;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Top */
 
@@ -100,6 +108,11 @@ html {
     background-position:center;
     background-size:cover;
 }
+.center {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
 .spec {
     color: black;
     justify-content: center;
@@ -137,18 +150,24 @@ html {
     box-shadow: 5px 5px 10px 0px black;
 }
 .smcircle {
-    object-position: 125% 125%;
-    width: 5%;
+    position: relative;
+    top: -50%;
+    left: -50%;
+    width: 10%;
     height: auto;
     border-radius: 50%;
     aspect-ratio: 1;
     background-color: #E07A64;
+    transition: all 0.5s;
+}
+.box:hover .smcircle {
+    transform: scale(1.05);
 }
 .box:hover {
     transform: scale(1.05);
 }
 .absolute {
-    object-position: center;
+    position: absolute;
 }
 
 /* Tablet */
@@ -161,6 +180,33 @@ html {
     .unvisible {
         visibility:visible;
     }
+
+    /* mid */
+    .about_us {
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+    }
+    .Aflex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .center {
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .spec {
+        text-align: center;
+    }
+    .box {
+        width: 30%;
+    }
+    /* bottom */
+
 }
 
 /* Computer */
@@ -170,7 +216,6 @@ html {
     .container {
         width: 100vw;
     }
-
     /* top */
 
     .menu {
@@ -192,7 +237,19 @@ html {
         width: 100vw;
         height: 80vh;
     }
+    .Aflex {
+        display: inline;
+    }
+    .margin_top {
+        margin: 3% 0%;
+    }
+    .center {
+        display: inline;
+        margin: auto 5%;
+    }
     .spec {
+        display: flex;
+        text-align: start;
         flex-wrap: nowrap;
     }
     .spec:nth-of-type(even) {
