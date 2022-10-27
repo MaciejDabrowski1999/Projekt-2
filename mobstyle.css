@@ -1,269 +1,288 @@
 @font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');}
+  font-family: "Roboto", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
 html {
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 /* Globalne */
-
+body {
+  font-size: 1em;
+}
 .bold {
-    font-size: 140%;
-    font-weight: bold;
+  font-weight: bold;
 }
 .size {
-    font-size: 150%;
+  font-size: 2em;
 }
 .margin {
-    margin: 0% 7%;
+  margin: 0% 7%;
 }
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wrap  {
-    flex-wrap: wrap;
+.wrap {
+  flex-wrap: wrap;
 }
 .margin_top {
-    margin: 7% 0%;
+  margin: 7% 0%;
 }
 .left {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 .black {
-    color: black;
+  color: black;
+  text-align: center;
 }
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Top */
 
 .menu {
-    background-color: #4E4E4E;
-    width: 100vw;
-    height: 5%;
-    flex-wrap: wrap;
+  background-color: #4e4e4e;
+  width: 100vw;
+  height: 2em;
+  flex-wrap: wrap;
 }
 .right {
-    width: 20vw
+  width: 20vw;
 }
 .unvisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /* Mid */
 
 .link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 .contact {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 .fog {
-    width: 100vw;
-    height: 80vh;
-    background-image: url(fog.jpg);
-    background-size: cover;
-    position: absolute;
-    z-index: -1;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(/assets/fog.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
 }
 .shadow {
-    background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.5);
 }
 .about_us {
-    font-size: 16px;
-    flex-direction: column;
-    transition: all 1s;
-    height: 80vh;
-    width: 50%;
+  font-size: 1em;
+  flex-direction: column;
+  transition: all 1s;
+  height: 80vh;
 }
 .offer.button {
-    width: 50%;
-    height: 20%;
-    text-align: center;
-    background: none;
-    border: 2px solid white;
-    color: white;
-    transition: all 1s;
+  width: 37%;
+  height: 16%;
+  text-align: center;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  transition: all 1s;
 }
 .offer.button:hover {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
 .circle {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-    aspect-ratio: 1.0;
-    background-position:center;
-    background-size:cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-position: center;
+  background-size: cover;
 }
 .center {
-    margin: 0%;
-    display: flex;
-    flex-direction: column;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
 }
 .spec {
-    color: black;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .jack {
-    background-image: url(jack.jpg);
+  background-image: url(/assets/jack.jpg);
 }
 .bob {
-    background-image: url(bob.jpg);
+  background-image: url(/assets/bob.jpg);
+}
+.workes {
+  justify-content: flex-start;
 }
 
 /*bottom*/
 
 .down {
-    background-color: #405D78;
+  background-color: #405d78;
 }
 .blue {
-    height: 20%;
-    justify-content: flex-start;
+  height: 10%;
+  justify-content: flex-start;
+  padding: 5% 0%;
 }
 .offer {
-    width: 100vw;
-    flex-wrap: wrap;
+  width: 100vw;
+  flex-wrap: wrap;
 }
 .box {
-    width: 75%;
-    height: auto;
-    aspect-ratio: 1;
-    margin: 3%;
-    background-color: white;
-    color: black;
-    transition: all 0.5s;
-    box-shadow: 5px 5px 10px 0px black;
+  width: 75%;
+  height: auto;
+  aspect-ratio: 1;
+  margin: 3%;
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
+  box-shadow: 5px 5px 10px 0px black;
 }
 .smcircle {
-    position: relative;
-    top: -50%;
-    left: -50%;
-    width: 10%;
-    height: auto;
-    border-radius: 50%;
-    aspect-ratio: 1;
-    background-color: #E07A64;
-    transition: all 0.5s;
+  position: relative;
+  top: -50%;
+  left: -50%;
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: #e07a64;
+  transition: all 0.5s;
 }
 .box:hover .smcircle {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .box:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .absolute {
-    position: absolute;
+  position: absolute;
+}
+.footer {
+  background-color: #4e4e4e;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.icon {
+  height: 31px;
+  width: 31px;
+  font-size: 31px;
 }
 
 /* Tablet */
 
-@media screen and (min-width:768px) and (max-width: 1200px) {
-    /* Top */
-    .menu {
-        flex-wrap: nowrap;
-    }
-    .unvisible {
-        visibility:visible;
-    }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  /* Top */
+  .menu {
+    flex-wrap: nowrap;
+  }
+  .unvisible {
+    visibility: visible;
+  }
 
-    /* mid */
-    .about_us {
-        width: 100vw;
-        justify-content: center;
-        text-align: center;
-        margin: 0%;
-    }
-    .Aflex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .center {
-        margin: 0%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .spec {
-        text-align: center;
-    }
-    .box {
-        width: 30%;
-    }
-    /* bottom */
+  /* mid */
+  .about_us {
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    margin: 0%;
+  }
+  .aFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .center {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .spec {
+    text-align: center;
+  }
+  .box {
+    width: 30%;
+  }
+  /* bottom */
 }
 
 /* Computer */
 
-@media screen and (min-width:1200px) {
-    /*global */
-    .container {
-        width: 100vw;
-    }
-    /* top */
+@media screen and (min-width: 1200px) {
+  /*global */
+  .container {
+    width: 100vw;
+  }
+  /* top */
 
-    .menu {
-        height: 50px;
-        width: 100vw;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+  .menu {
+    height: 50px;
+    width: 100vw;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .right {
+    width: 100px;
+  }
+  .unvisible {
+    visibility: visible;
+  }
 
-    }
-    .right {
-        width: 100px
-    }
-    .unvisible {
-        visibility:visible;
-    }
+  /* mid */
+  .fog {
+    width: 100vw;
+    height: 80vh;
+  }
+  .Aflex {
+    display: inline;
+  }
+  .margin_top {
+    margin-top: 3%;
+  }
+  .center {
+    margin: auto 5%;
+  }
+  .spec {
+    display: flex;
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+  .spec:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+  .about_us {
+    align-items: flex-start;
+  }
+  .offer.button {
+    width: 20%;
+    height: 25%;
+  }
 
-    /* mid */
-    .fog {
-        width: 100vw;
-        height: 80vh;
-    }
-    .Aflex {
-        display: inline;
-    }
-    .margin_top {
-        margin: 3% 0%;
-    }
-    .center {
-        display: inline;
-        margin: auto 5%;
-    }
-    .spec {
-        display: flex;
-        text-align: start;
-        flex-wrap: nowrap;
-    }
-    .spec:nth-of-type(even) {
-        flex-direction: row-reverse;
-        text-align: end;
-    }
+  /*bottom */
 
-    /*bottom */
-
-    .offer {
-        flex-wrap: wrap;
-    }
-    .box {
-        width: 25%;
-    }
-    
+  .offer {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 25%;
+  }
 }
