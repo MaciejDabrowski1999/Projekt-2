@@ -16,10 +16,10 @@ body {
   font-weight: bold;
 }
 .size {
-  font-size: 2em;
+  font-size: 36px;
 }
 .margin {
-  margin: 0% 7%;
+  margin: 0% 3%;
 }
 .flex {
   display: flex;
@@ -36,7 +36,8 @@ body {
   justify-content: flex-start;
 }
 .black {
-  color: black;
+  padding: 5%;
+  color: #152d41;
   text-align: center;
 }
 .center {
@@ -51,18 +52,20 @@ body {
   background-color: #4e4e4e;
   width: 100vw;
   height: 2em;
-  flex-wrap: wrap;
 }
 .right {
-  width: 20vw;
+  width: 15vw;
 }
 .unvisible {
   visibility: hidden;
 }
 
 /* Mid */
-
+.titleHead {
+  width: 81%;
+}
 .link {
+  display: flex;
   text-decoration: none;
   color: white;
 }
@@ -87,11 +90,10 @@ body {
   height: 80vh;
 }
 .offer.button {
-  width: 37%;
-  height: 16%;
-  text-align: center;
+  width: 36%;
+  height: 10%;
   background: none;
-  border: 2px solid white;
+  border: 3px solid white;
   color: white;
   transition: all 1s;
 }
@@ -110,10 +112,8 @@ body {
   background-position: center;
   background-size: cover;
 }
-.center {
-  margin: 0%;
-  display: flex;
-  flex-direction: column;
+.description {
+  text-align: justify;
 }
 .spec {
   color: black;
@@ -137,15 +137,18 @@ body {
   background-color: #405d78;
 }
 .blue {
+  font-size: 1.5em;
   height: 10%;
-  justify-content: flex-start;
+  text-align: center;
   padding: 5% 0%;
 }
 .offer {
   width: 100vw;
   flex-wrap: wrap;
+  padding: 3% 0%;
 }
 .box {
+  font-size: 24px;
   width: 75%;
   height: auto;
   aspect-ratio: 1;
@@ -153,7 +156,6 @@ body {
   background-color: white;
   color: black;
   transition: all 0.5s;
-  box-shadow: 5px 5px 10px 0px black;
 }
 .smcircle {
   position: relative;
@@ -178,9 +180,11 @@ body {
 .footer {
   background-color: #4e4e4e;
   width: 100vw;
+  height: 88px;
   flex-wrap: wrap;
 }
 .icon {
+  padding: 3% 0%;
   height: 31px;
   width: 31px;
   font-size: 31px;
@@ -286,3 +290,8 @@ body {
     width: 25%;
   }
 }
+
+
+https://633b27e99d603015f2ef0bd5--capable-taffy-c27370.netlify.app/
+
+https://github.com/MaciejDabrowski1999/Projekt-2.git
