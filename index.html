@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reset.css" />
-    <link href="mobstyle.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <title>Projekt zaliczeniowy</title>
     <script
       src="https://kit.fontawesome.com/5b34c87937.js"
@@ -13,82 +13,80 @@
     ></script>
   </head>
   <body>
-    <nav class="menu container flex left">
-      <div class="margin bold">moja firma</div>
-      <div class="margin flex unvisible">
-        <a class="link right" href="#about_us">o nas</a>
-        <a class="link right" href="#offer">oferta</a>
-        <a class="link contact right" href="#kontakt" aria-disabled="true"
-          >kontakt</a
-        >
+    <nav>
+      <div class="menu center">
+        <p class="name">moja firma</p>
+        <div class="barLink">
+          <a class="link" href="#about_us">o nas</a>
+          <a class="link" href="#offer">oferta</a>
+          <a class="link disable" href="#kontakt" aria-disabled="true"
+            >kontakt</a
+          >
+        </div>
       </div>
     </nav>
-    <div class="shadow container">
+    <section class="container">
       <div class="fog"></div>
-      <div class="about_us flex margin" id="about_us">
-        <section class="banner">
-          <h1 class="bold size margin_top titleHead">
-            Nasza firma oferuje najwyższej jakości produkty.
-          </h1>
-          <p class="margin_top">Nie wierz nam na słowo - sprawdź</p>
-          <a class="link margin_top linkButton" href="#offer"
-            ><button class="button">Oferta</button></a
-          >
-        </section>
-      </div>
-    </div>
-    <div class="container">
-      <p class="bold size black margin">Nasi specjaliści</p>
-      <div class="aFlex">
-        <div class="spec margin">
-          <div class="circle bob"></div>
-          <div class="margin workers">
-            <p class="bold margin_top">Imię nazwisko [dział]</p>
-            <p class="margin margin_top description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-              massa et lacus egestas cursus a non magna. Fusce scelerisque
-              blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
-              tempor elementum lorem in, varius pellentesque ligula. Duis
-              efficitur lacinia enim, non tincidunt libero ultrices in.
-            </p>
-          </div>
-        </div>
-        <div class="spec margin">
-          <div class="circle jack"></div>
-          <div class="margin workers">
-            <p class="bold margin_top">Imię nazwisko [dział]</p>
-            <p class="margin margin_top description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-              massa et lacus egestas cursus a non magna. Fusce scelerisque
-              blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
-              tempor elementum lorem in, varius pellentesque ligula. Duis
-              efficitur lacinia enim, non tincidunt libero ultrices in.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section id="offer" class="down container">
-      <h2 class="bold margin blue wrap">Czym zajmuje się nasza firma?</h2>
-      <div class="offer flex">
-        <div class="box flex" id="onebox">
-          <div class="smcircle"></div>
-          <p class="absolute">Usługa 1</p>
-        </div>
-        <div class="box flex">Usługa 2</div>
-        <div class="box flex">Usługa 3</div>
-        <div class="box flex">Usługa 4</div>
-        <div class="box flex">Usługa 5</div>
-        <div class="box flex">Usługa 6</div>
+      <div class="aboutUs center" id="about_us">
+        <h1 class="title">Nasza firma oferuje najwyższej jakości produkty.</h1>
+        <p>Nie wierz nam na słowo - sprawdź</p>
+        <a href="#offer"><button class="button">Oferta</button></a>
       </div>
     </section>
-    <footer class="footer container flex">
-      <div class="margin bold">
-        Nazwa firmy - wszelkie prawa zastrzerzone, 2019
+    <div>
+      <p class="color titleSpec center">Nasi specjaliści</p>
+      <div class="column center">
+        <div class="spec">
+          <div class="circle bob"></div>
+          <div class="workers">
+            <p class="bold">Imię nazwisko [dział]</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+              massa et lacus egestas cursus a non magna. Fusce scelerisque
+              blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+              tempor elementum lorem in, varius pellentesque ligula. Duis
+              efficitur lacinia enim, non tincidunt libero ultrices in.
+            </p>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="circle jack"></div>
+          <div class="workers">
+            <p class="bold">Imię nazwisko [dział]</p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+              massa et lacus egestas cursus a non magna. Fusce scelerisque
+              blandit nunc, id malesuada ex lobortis a. Integer felis nisi,
+              tempor elementum lorem in, varius pellentesque ligula. Duis
+              efficitur lacinia enim, non tincidunt libero ultrices in.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="size flex margin">
-        <i class="fa-brands fa-instagram margin icon"></i>
-        <i class="fa-brands fa-facebook margin icon"></i>
+    </div>
+    <section id="offer" class="down">
+      <div class="center">
+        <h2 class="bold blue">Czym zajmuje się nasza firma?</h2>
+        <div class="offer">
+          <div class="box" id="onebox">
+            <div class="smcircle"></div>
+            <p class="absolute">Usługa 1</p>
+          </div>
+          <div class="box">Usługa 2</div>
+          <div class="box">Usługa 3</div>
+          <div class="box">Usługa 4</div>
+          <div class="box">Usługa 5</div>
+          <div class="box">Usługa 6</div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="bottom center">
+        <div class="bold">Nazwa firmy - wszelkie prawa zastrzerzone, 2019</div>
+        <div class="icons">
+          <i class="fa-brands fa-instagram margin icon"></i>
+          <i class="fa-brands fa-facebook margin icon"></i>
+        </div>
       </div>
     </footer>
   </body>
