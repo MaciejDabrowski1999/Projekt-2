@@ -22,6 +22,7 @@ nav {
   margin: 0px 14px;
 }
 .barLink {
+  margin: 0 14px;
   visibility: hidden;
 }
 .disable {
@@ -55,7 +56,7 @@ nav {
   font-size: 32px;
   margin: 41px 0px;
 }
-.button {
+.offer-button {
   width: 164px;
   height: 41px;
   margin-top: 20px;
@@ -63,6 +64,7 @@ nav {
   border: 3px solid white;
   color: white;
   transition: all 1s;
+  cursor: pointer;
 }
 .titleSpec {
   text-align: center;
@@ -147,7 +149,7 @@ nav {
 .absolute {
   position: absolute;
 }
-.footer {
+.footer-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,6 +157,17 @@ nav {
   width: 100vw;
   height: 100px;
   flex-wrap: wrap;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.name-footer {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
 }
 .icons {
   display: flex;
@@ -207,7 +220,7 @@ nav {
     padding: 0;
     flex-direction: row;
   }
-  .button {
+  .offer-button {
     width: 200px;
     height: 50px;
   }
@@ -283,7 +296,7 @@ nav {
     padding: 0;
     flex-direction: row;
   }
-  .button {
+  .offer-button {
     width: 164px;
     height: 40px;
     margin: 20px 0;
@@ -297,7 +310,7 @@ nav {
   .box:hover {
     transform: scale(1.05);
   }
-  .button:hover {
+  .offer-button:hover {
     color: black;
     background-color: white;
   }
