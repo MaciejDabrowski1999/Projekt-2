@@ -1,11 +1,8 @@
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-}
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
   color: white;
+  line-height: 21px;
 }
 nav {
   background-color: #4e4e4e;
@@ -20,6 +17,7 @@ nav {
 }
 .name {
   margin: 0px 14px;
+  line-height: 21px;
 }
 .barLink {
   margin: 0 14px;
@@ -54,12 +52,17 @@ nav {
   width: 81%;
   font-weight: 700;
   font-size: 32px;
+  line-height: 42px;
   margin: 41px 0px;
 }
 .offer-button {
   width: 164px;
   height: 41px;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background: none;
   border: 3px solid white;
   color: white;
@@ -70,6 +73,7 @@ nav {
   text-align: center;
   font-weight: 700;
   font-size: 32px;
+  line-height: 42px;
   margin: 34px 14px;
 }
 .circle {
@@ -99,6 +103,8 @@ nav {
   background-image: url(/assets/bob.jpg);
 }
 .description {
+  font-size: 18px;
+  line-height: 21px;
   margin: 20px 0px;
 }
 .down {
@@ -153,9 +159,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 21px;
   background-color: #4e4e4e;
   width: 100vw;
-  height: 100px;
   flex-wrap: wrap;
 }
 .bottom {
@@ -166,6 +172,7 @@ nav {
 }
 .name-footer {
   font-size: 18px;
+  padding-top: 38px;
   text-align: center;
   width: 100%;
 }
@@ -175,7 +182,7 @@ nav {
   align-items: center;
 }
 .icon {
-  margin: 15px 10px;
+  margin: 15px 10px 26px 10px;
   height: 31px;
   width: 31px;
   font-size: 31px;
@@ -223,6 +230,29 @@ nav {
   .offer-button {
     width: 200px;
     height: 50px;
+  }
+  .footer-bottom {
+    height: 71px;
+  }
+  .name-footer {
+    margin: 0px 25px 0 0;
+    padding: 0px;
+    text-align: left;
+  }
+  .bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icons {
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+  .icon {
+    margin: 0px;
+    padding: 0 18px 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -314,14 +344,28 @@ nav {
     color: black;
     background-color: white;
   }
+  .footer-bottom {
+    height: 71px;
+  }
+  .name-footer {
+    margin: 0px 25px 0 0;
+    padding: 0px;
+    text-align: left;
+  }
   .bottom {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
   }
   .icons {
-    width: 10%;
+    margin: 0px;
+    padding: 0px;
     justify-content: space-between;
+  }
+  .icon {
+    margin: 0px;
+    padding: 0 18px 0 0;
   }
   .center {
     width: 960px;
