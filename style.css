@@ -187,7 +187,7 @@ nav {
   width: 31px;
   font-size: 31px;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   /* Top */
   .menu {
     justify-content: space-between;
@@ -256,28 +256,10 @@ nav {
   }
 }
 @media screen and (min-width: 1200px) {
-  .menu {
-    justify-content: space-between;
-  }
-  .link {
-    margin: 0px 14px;
-    list-style: none;
-    color: white;
-    text-decoration: none;
-  }
-  .barLink {
-    visibility: visible;
-  }
   .title {
     width: 50%;
   }
-
   /* mid */
-  .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .titleSpec {
     text-align: left;
     padding: 50px 0 0 0;
@@ -319,12 +301,7 @@ nav {
   }
   /* bottom */
   .blue {
-    padding: 5%;
     text-align: left;
-  }
-  .offer {
-    padding: 0;
-    flex-direction: row;
   }
   .offer-button {
     width: 164px;
@@ -346,26 +323,6 @@ nav {
   }
   .footer-bottom {
     height: 71px;
-  }
-  .name-footer {
-    margin: 0px 25px 0 0;
-    padding: 0px;
-    text-align: left;
-  }
-  .bottom {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .icons {
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-between;
-  }
-  .icon {
-    margin: 0px;
-    padding: 0 18px 0 0;
   }
   .center {
     width: 960px;
